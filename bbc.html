@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Technology - BBC</title>
+    <style type="text/css">
+        #topbar {
+            width: 1200px;
+            margin: 0 auto;
+            height: 40px;
+           
+            
+            
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, freesans, sans-serif;
+        }
+        #logo {
+            margin-top: 8px;
+            width: 100px;
+            float: left;
+            margin-right: 8px;
+        }
+        .topbar-section {
+            float: left;
+            border-left: 1px #D9D9D9 solid;
+            height: 100%;
+        }
+        #signin-logo {
+            width: 25px;
+            margin: 15px 15px;
+            float: left;
+        }
+        #signin-text {
+            font-weight: bold;
+            font-size: 90%;
+            position: relative;
+            top: 18px;
+            margin: 10px;
+        }
+        .topbar-menu {
+            font-weight: bold;
+            font-size: 90%;
+            float: left;
+            height: 25px;
+            padding: 15px 15px 0 15px;
+            
+        }
+        #dots-icon {
+            width: 30px;
+            margin:-5px 0 10px 5px;
+            padding-bottom: 40px;
+        }
+        #search-box {
+            background-color: #f1f5f8;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px;
+            margin: -5px 0 10px 5px;
+            float: left;
+        }
+        #search-icon {
+            width: 30px;
+            margin: -5px 0 10px 0;
+            height: 27px;
+            position: relative; 
+             
+           
+        }
+        .clear {
+            clear: both;
+        }
+        #menu-bar-container {
+            background-color: #B80000;
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+            margin-right: 80px;
+        }
+        #menu-bar {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-size: 40px;
+            padding-top: 8px;
+        }
+        #menu-bar-2-container {
+            background-color: #B80000;
+            width: 100%;
+            
+        }
+        #menu-bar-2 {
+            width: 1200px;
+            margin: 0 auto;
+            height: 30px;
+            padding: 0;
+            
+        }
+        #menu-bar-2 a {
+            color: white;
+            text-decoration: none;
+            margin-top: 5px;
+            padding: 5px 5px 0 5px;
+            border-right: 1px solid #BB454F;
+            font-size: 12px;
+            position: left;
+            top: 5px;
+            float: left;  
+        }
+        #menu-bar-2 a:hover {
+            text-decoration: underline;
+        }
+        .no-border {
+            border: none !important;
+        }
+        #dropdown-arrow {
+            padding: 5px;
+            width: 15px;
+            height: 15px;
+            position: relative;
+            float: left;
+        }
+        #page-container {
+            width: 1400px;
+            margin: 0;
+            margin-left: 70px;
+
+        }
+        h2 {
+            font-weight: normal;
+            margin-top: 15px;
+            font-size: 20px;
+            border-bottom: 3px solid #B80000;
+            width: 45px;
+        }
+        #facebook-news {
+            padding: 0;
+            margin: 0;
+            width: 500px;
+            height: 280px;
+        }
+        h3 a {
+            color: #565664;
+            font-size: 30px;
+            text-decoration: none;
+            margin-top: 10px;
+            
+        }
+        h3 a:hover {
+            color: #B80000;
+        }
+        #article-summary {
+            color: #5A5A5F;
+            width: 480px;
+            font-size: 14px;
+        }
+        #article-summary img {
+            height: 20px;
+            margin: -5px;
+            padding: 0;
+            position: relative;
+            top: 2px;
+        }
+        #article-summary a {
+            text-decoration: none;
+            color: #01010e;
+            font-size: 14px;
+            
+        }
+        #article-summary a:hover {
+            color: #B80000;
+            text-decoration: underline;
+            
+        }
+        #article-container {
+            float: left;
+            width: 700px;
+        }
+        li {
+            color: #01010e;
+            font-size: 16px;
+        }
+        /* for robot news */
+        #robots-news {
+            padding: 0;
+            margin: 0;
+            width: 240px;
+            height: 170px;
+            
+        }
+        #small-article1 {
+            float: left;
+            width: 250px;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            margin-left: -190px;
+            margin-top: -6px;
+        }
+        h4 a {
+            color: #565664;
+            font-size: 18px;
+            text-decoration: none;
+            width: 500px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        h4 a:hover {
+            color: #B80000;
+        }
+        #small-article-summary1 {
+            color: #5A5A5F;
+            width: 250px;
+            font-size: 14px;
+            margin-top: -10px;
+            
+        }
+        #small-article-summary1 img {
+            height: 20px;
+            margin: -3px;
+            padding: 0;
+            position: relative;
+            top: 2px;
+        }
+        #small-article-summary1 a {
+            text-decoration: none;
+            color: #01010e;
+            font-size: 12px;
+            
+        }
+        #small-article-summary1 a:hover {
+            color: #B80000;
+            text-decoration: underline;   
+        }
+         /* for female news */
+        #females-news {
+            padding: 0;
+            margin: 0;
+            width: 230px;
+            height: 160px;
+           
+        }
+         #small-article2 {
+            float: left;
+            width: 250px;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        h5 a {
+            color: #565664;
+            font-size: 18px;
+            text-decoration: none;
+            width: 500px;
+        }
+        h5 a:hover {
+            color: #B80000;
+        }
+        #small-article-summary2 {
+            color: #5A5A5F;
+            width: 220px;
+            font-size: 12px;
+            margin-top: -4px;
+            
+        }
+        #small-article-summary2 img {
+            height: 20px;
+            margin: -3px;
+            padding: 0;
+            position: relative;
+            top: 2px;
+        }
+        #small-article-summary2 a {
+            text-decoration: none;
+            color: #01010e;
+            font-size: 12px;
+        }
+        #small-article-summary2 a:hover {
+            color: #B80000;
+            text-decoration: underline;   
+        }
+        
+        /*chinese-news*/
+        #chinese-news {
+            padding: 0;
+            margin: 0;
+            width: 240px;
+            height: 158px;
+            
+            
+        }
+         #small-article3 {
+            float: left;
+            width: 250px;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        h6 a {
+            color: #565664;
+            font-size: 18px;
+            text-decoration: none;
+            width: 500px;
+        }
+        h6 a:hover {
+            color: #B80000;
+        }
+        #small-article-summary3 {
+            color: #5A5A5F;
+            width: 220px;
+            font-size: 12px;
+            margin-top: -4px;
+            
+        }
+        #small-article-summary3 img {
+            height: 20px;
+            margin: -3px;
+            padding: 0;
+            position: relative;
+            top: 2px;
+        }
+        #small-article-summary3 a {
+            text-decoration: none;
+            color: #01010e;
+            font-size: 12px;
+        }
+        #small-article-summary3 a:hover {
+            color: #B80000;
+            text-decoration: underline;   
+        }
+        /*crypto-news*/
+        #crypto-news {
+            padding: 0;
+            margin: 0;
+            width: 240px;
+            height: 158px;  
+        }
+         #small-article4 {
+            float: left;
+            width: 250px;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        #small-article-summary4 {
+            color: #5A5A5F;
+            width: 220px;
+            font-size: 12px;
+            margin-top: -4px;
+            
+        }
+        #small-article-summary4 img {
+            height: 20px;
+            margin: -3px;
+            padding: 0;
+            position: relative;
+            top: 2px;
+        }
+        #small-article-summary4 a {
+            text-decoration: none;
+            color: #01010e;
+            font-size: 12px;
+        }
+        #small-article-summary4 a:hover {
+            color: #B80000;
+            text-decoration: underline;   
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <div id="topbar">
+        
+        <img id="logo" src="bbc-logo.png">
+        <div id="signin-div" class="topbar-section">
+            <img id="signin-logo" src="signin-logo.PNG">
+            <span id="signin-text">Sign in</span>
+        </div>
+        <div class="topbar-section topbar-menu">
+            Home
+        </div>
+        <div class="topbar-menu">
+            News
+        </div>
+        <div class="topbar-menu">
+            Sport
+        </div>
+        <div class="topbar-menu">
+            Reel
+        </div>
+        <div class="topbar-menu">
+            Worklife
+        </div>
+        <div class="topbar-menu">
+            Travel
+        </div>
+        <div class="topbar-menu">
+            Future
+        </div>
+        <div class="topbar-menu">
+            Culture
+        </div>
+        <div class="topbar-menu">
+            <img id="dots-icon" src="3dots-icon.png"> 
+        </div>
+        <div class="topbar-menu">
+            <input id="search-box" type="text" value="Search">
+            <input type="image" id="search-icon" src="search-icon.jpg">
+            
+        </div>
+
+    </div>
+    <div class="clear"></div>
+        <div id="menu-bar-container">
+            <div id="menu-bar">
+               <h1>NEWS</h1>
+
+            </div>
+        </div>
+    <div class="clear"></div>
+    <div id="menu-bar-2-container">
+        <div id="menu-bar-2">
+            
+            <a href="">Home</a>
+            <a href="">War in Ukraine</a>
+            <a href="">Coronavirus</a>
+            <a href="">Climate</a>
+            <a href="">Video</a>
+            <a href="">World</a>
+            <a href="">Asia</a>
+            <a href="">UK</a>
+            <a href="">Business</a>
+            <a href="">Tech</a>
+            <a href="">Science</a>
+            <a href="">Stories</a>
+            <a href="">Entertainment & Arts</a>
+            <a href="">Health</a>
+            <a href="">World News TV</a>
+            <a href="" class="no-border">More</a>
+            <img id="dropdown-arrow" src="dropdown-arrow.png">
+
+        </div>
+    </div>
+     <div class="clear"></div>
+        <div id="page-container">
+            <div id="main-article">
+               <h2>Tech</h2>
+                <div id="article-container">
+                 <img id="facebook-news" src="facebook-news.jpg">
+                 <h3><a href="">Facebook owner Meta updates its<br>privacy policy</a></h3>
+                    <div id="article-summary">
+                       <p>But the company says the changes don't allow Meta to collect, use or share your data in new ways</p>
+                       <p> <img src="clock.PNG"> 1h | <a href="">Technology</a></p>
+                        <li><p><a href="">Female avatar's 'sexually assaulted' in Meta VR area</a></p></li>
+                        <li><p><a href="">Meta being sued by ex-Facebook content moderator</a></p></li>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div id="small-article1">
+                <img id="robots-news" src="News2.PNG">
+                <h4><a href="">Dyson working on home robots</a></h4>
+                    <div id="small-article-summary1">
+                      <p>The company is setting up a major robotics research centre in the UK.</p>
+                      <p> <img src="clock.PNG"> 24h | <a href="">Technology</a></p>
+                   
+                    </div>
+            </div>  
+            <div id="small-article2">
+                <img id="females-news" src="News3.PNG">
+                    <h5><a href="">Female avatar's 'sexually assaulted' in Meta VR area</a></h5>
+                        <div id="small-article-summary2">
+                          <p>Campaigners join calls by some Meta shareholders for an assesment of on potential harms users face.</p>
+                          <p> <img src="clock.PNG"> 1d | <a href="">Technology</a></p>
+                       
+                        </div>
+            </div>
+            <div id="small-article3">
+                <img id="chinese-news" src="News4.PNG">
+                    <h6><a href="">Review of chinese buyout of UK's biggest chip plant</a></h6>
+                        <div id="small-article-summary3">
+                          <p>The UK government says it will make a national security assesment of the sale of Newport Water Fab.</p>
+                          <p> <img src="clock.PNG"> 24h | <a href="">Wales politics</a></p>
+                       
+                        </div>
+            </div>
+            <div id="small-article4">
+                <img id="crypto-news" src="News5.PNG">
+                    <h4><a href="">I was arrested for trying to confront cryptocrash boss</a></h4>
+                        <div id="small-article-summary4">
+                          <p>A man says he lost millions, and then was arrested for trying to talk to crypto boss Do Kwon.</p>
+                          <p> <img src="clock.PNG"> 1d | <a href="">Wales politics</a></p>
+                       
+                        </div>
+            </div>
+            <div id="small-article4">
+                <img id="airbnb-news" src="News6.PNG">
+                    <h4><a href="">Airbnb to quit china as lockdown restrict tourism</a></h4>
+                        <div id="small-article-summary4">
+                          <p>Stays in china made up only 1% of Airbnb's revenue for the last few years, a source said.</p>
+                          <p> <img src="clock.PNG"> 2d | <a href="">Technology</a></p>
+                       
+                        </div>
+            </div>
+            
+            
+
+
+
+
+
+
+        </div>
+</body>
+
+
+</html>
